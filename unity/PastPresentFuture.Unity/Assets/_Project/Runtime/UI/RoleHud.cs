@@ -18,7 +18,7 @@ namespace PPF.UI
         {
             if (_roleText == null)
             {
-                Debug.LogError("RoleHud: Role text is not assigned.");
+                UnityEngine.Debug.LogError("RoleHud: Role text is not assigned.");
             }
         }
 
