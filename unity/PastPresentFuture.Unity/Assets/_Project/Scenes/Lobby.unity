@@ -612,6 +612,7 @@ GameObject:
   - component: {fileID: 782630051}
   - component: {fileID: 782630050}
   - component: {fileID: 782630049}
+  - component: {fileID: 782630052}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -693,6 +694,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &782630052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782630048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b0cf2c5b74ca6e469ada70efce00b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PPF.Core.Timeline.RoleCameraCulling
+  _realLayerName: WorldReal
+  _proxyLayerName: WorldProxy
 --- !u!1 &786176812
 GameObject:
   m_ObjectHideFlags: 0

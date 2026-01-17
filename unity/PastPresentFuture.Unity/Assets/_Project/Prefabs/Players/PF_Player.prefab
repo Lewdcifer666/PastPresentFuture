@@ -16,7 +16,8 @@ GameObject:
   - component: {fileID: 890377267671654402}
   - component: {fileID: 7297073368151330813}
   - component: {fileID: 9163172541558327767}
-  m_Layer: 0
+  - component: {fileID: 8988268386171645781}
+  m_Layer: 6
   m_Name: PF_Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 3349265925
+  GlobalObjectIdHash: 2730097825
   InScenePlacedSourceGlobalObjectIdHash: 0
   DeferredDespawnTick: 0
   Ownership: 1
@@ -183,3 +184,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PPF.Core.Timeline.TimelineTrackable
   _debugId: 
+--- !u!114 &8988268386171645781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574560484965984884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e393bba146e1d7e41817b9d110ff95d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PPF.Util.AutoWiggle
+  _amplitude: 1
+  _speed: 1

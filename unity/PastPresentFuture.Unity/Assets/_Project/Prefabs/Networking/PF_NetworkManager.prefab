@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5298704798448366007}
   - component: {fileID: 8035333526151900921}
   - component: {fileID: 9218975496725255382}
+  - component: {fileID: 584412536764684224}
   m_Layer: 0
   m_Name: PF_NetworkManager
   m_TagString: Untagged
@@ -163,3 +164,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PPF.Core.Timeline.TimelineService
   _config: {fileID: 11400000, guid: 657e21b0c66841f4e94232822139032b, type: 2}
   _autoDiscoverOnStart: 1
+--- !u!114 &584412536764684224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345272809083695521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63926c376ce4cd4fbffd4197d621fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PPF.Core.Timeline.PastViewProxyService
+  _realLayerName: WorldReal
+  _proxyLayerName: WorldProxy
+  _autoCreateProxies: 1
+  _disableWhenNotPast: 1
