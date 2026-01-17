@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4858111302360794534}
   - component: {fileID: 4242782431031903330}
   - component: {fileID: 5298704798448366007}
+  - component: {fileID: 8035333526151900921}
   m_Layer: 0
   m_Name: PF_NetworkManager
   m_TagString: Untagged
@@ -133,3 +134,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 739e65f08e7943c43b190885a62600d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PPF.Networking.Netcode.TransportBinder
+--- !u!114 &8035333526151900921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345272809083695521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0aff4d0e9d85f448aab60a4ce77c9a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PPF.Roles.RoleAssignmentService
+  _enforceUniqueRoles: 1
+  _reassignOnDisconnect: 0

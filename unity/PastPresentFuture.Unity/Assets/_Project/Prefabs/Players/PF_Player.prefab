@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8775873690424646371}
   - component: {fileID: 8356367046928042424}
   - component: {fileID: 890377267671654402}
+  - component: {fileID: 7297073368151330813}
   m_Layer: 0
   m_Name: PF_Player
   m_TagString: Untagged
@@ -128,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 2983338974
+  GlobalObjectIdHash: 3349265925
   InScenePlacedSourceGlobalObjectIdHash: 0
   DeferredDespawnTick: 0
   Ownership: 1
@@ -155,3 +156,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PPF.Networking.Netcode.SimpleNetworkPlayer
   ShowTopMostFoldoutHeaderGroup: 1
   _renderer: {fileID: 7182385187993658821}
+--- !u!114 &7297073368151330813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574560484965984884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9f07ad01241d340852d5b8c2f62232, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PPF.Roles.PlayerRoleState
+  ShowTopMostFoldoutHeaderGroup: 1
