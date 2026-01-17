@@ -19,7 +19,7 @@ namespace PPF.Networking.Netcode
             var nm = GetComponent<NetworkManager>();
             if (nm == null)
             {
-                Debug.LogError("TransportBinder: NetworkManager missing.");
+                UnityEngine.Debug.LogError("TransportBinder: NetworkManager missing.");
                 return;
             }
 
@@ -30,12 +30,12 @@ namespace PPF.Networking.Netcode
             var utp = GetComponent<UnityTransport>();
             if (utp == null)
             {
-                Debug.LogError("TransportBinder: UnityTransport missing. Add UnityTransport to the NetworkManager prefab.");
+                UnityEngine.Debug.LogError("TransportBinder: UnityTransport missing. Add UnityTransport to the NetworkManager prefab.");
                 return;
             }
 
             nm.NetworkConfig.NetworkTransport = utp;
-            Debug.Log("TransportBinder: Bound UnityTransport to NetworkManager.NetworkConfig.NetworkTransport.");
+            UnityEngine.Debug.Log("TransportBinder: Bound UnityTransport to NetworkManager.NetworkConfig.NetworkTransport.");
         }
     }
 }

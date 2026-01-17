@@ -72,7 +72,7 @@ namespace PPF.Roles.Present
             }
 
             if (_debugDrawRay)
-                Debug.DrawRay(_cam.transform.position, _cam.transform.forward * _range, Color.yellow);
+                UnityEngine.Debug.DrawRay(_cam.transform.position, _cam.transform.forward * _range, Color.yellow);
 
             if (Keyboard.current != null && Keyboard.current[_toggleFreezeKey].wasPressedThisFrame)
             {

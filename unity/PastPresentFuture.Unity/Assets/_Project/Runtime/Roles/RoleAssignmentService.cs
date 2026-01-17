@@ -25,7 +25,7 @@ namespace PPF.Roles
         {
             if (NetworkManager.Singleton == null)
             {
-                Debug.LogError("RoleAssignmentService requires an active NetworkManager.");
+                UnityEngine.Debug.LogError("RoleAssignmentService requires an active NetworkManager.");
                 return;
             }
 
@@ -77,7 +77,7 @@ namespace PPF.Roles
 
             ApplyRoleToPlayerObject(clientId, chosen);
 
-            Debug.Log($"[ROLE] Assigned {chosen} to client {clientId}");
+            UnityEngine.Debug.Log($"[ROLE] Assigned {chosen} to client {clientId}");
         }
 
         private Role ChooseRole(ulong clientId)
@@ -127,7 +127,7 @@ namespace PPF.Roles
                 yield return null;
             }
 
-            Debug.LogWarning($"[ROLE] Timed out assigning role {role} to client {clientId} (player object not found).");
+            UnityEngine.Debug.LogWarning($"[ROLE] Timed out assigning role {role} to client {clientId} (player object not found).");
         }
 
         private bool TryApplyRoleNow(ulong clientId, Role role)
@@ -141,7 +141,7 @@ namespace PPF.Roles
                     return true;
                 }
 
-                Debug.LogWarning($"[ROLE] PlayerObject for client {clientId} missing PlayerRoleState component.");
+                UnityEngine.Debug.LogWarning($"[ROLE] PlayerObject for client {clientId} missing PlayerRoleState component.");
                 return true; // stop retrying; it's a prefab setup issue
             }
 

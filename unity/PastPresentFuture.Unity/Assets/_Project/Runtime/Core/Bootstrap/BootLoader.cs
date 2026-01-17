@@ -37,7 +37,7 @@ namespace PPF.Core.Bootstrap
 
             if (_networkManagerPrefab == null)
             {
-                Debug.LogError(
+                UnityEngine.Debug.LogError(
                     "BootLoader: NetworkManager prefab is not assigned. " +
                     "Assign PF_NetworkManager in the Boot scene inspector.");
                 return;
@@ -45,7 +45,7 @@ namespace PPF.Core.Bootstrap
 
             // Instantiate the prefab.
             GameObject nm = Instantiate(_networkManagerPrefab);
-            Debug.Log("BootLoader: Spawned NetworkManager prefab.");
+            UnityEngine.Debug.Log("BootLoader: Spawned NetworkManager prefab.");
             nm.name = "NET";
 
             if (_persistNetworkManager)

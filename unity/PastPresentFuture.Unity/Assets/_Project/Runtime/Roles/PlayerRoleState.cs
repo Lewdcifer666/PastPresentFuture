@@ -38,7 +38,7 @@ namespace PPF.Roles
         {
             if (IsOwner)
             {
-                Debug.Log($"[ROLE] Local role updated: {current}");
+                UnityEngine.Debug.Log($"[ROLE] Local role updated: {current}");
             }
         }
     }

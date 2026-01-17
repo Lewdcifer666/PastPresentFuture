@@ -17,7 +17,7 @@ namespace PPF.Networking.Netcode
             // This component is expected to live on the NetworkManager GameObject.
             if (NetworkManager.Singleton == null)
             {
-                Debug.LogError("ConnectionApprovalService requires an active NetworkManager.");
+                UnityEngine.Debug.LogError("ConnectionApprovalService requires an active NetworkManager.");
                 return;
             }
 

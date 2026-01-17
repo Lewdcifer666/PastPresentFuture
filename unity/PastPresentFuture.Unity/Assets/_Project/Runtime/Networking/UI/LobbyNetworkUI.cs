@@ -38,7 +38,7 @@ namespace PPF.Networking.UI
             var nm = NetworkManager.Singleton;
             if (nm == null)
             {
-                Debug.LogError("No NetworkManager.Singleton found. Ensure PF_NetworkManager is in the scene.");
+                UnityEngine.Debug.LogError("No NetworkManager.Singleton found. Ensure PF_NetworkManager is in the scene.");
                 return;
             }
 
@@ -46,12 +46,12 @@ namespace PPF.Networking.UI
 
             if (nm.IsListening)
             {
-                Debug.Log("Already running.");
+                UnityEngine.Debug.Log("Already running.");
                 return;
             }
 
             bool ok = nm.StartHost();
-            Debug.Log(ok ? "Host started." : "Failed to start host.");
+            UnityEngine.Debug.Log(ok ? "Host started." : "Failed to start host.");
         }
 
         public void JoinLocal()
@@ -59,7 +59,7 @@ namespace PPF.Networking.UI
             var nm = NetworkManager.Singleton;
             if (nm == null)
             {
-                Debug.LogError("No NetworkManager.Singleton found. Ensure PF_NetworkManager is in the scene.");
+                UnityEngine.Debug.LogError("No NetworkManager.Singleton found. Ensure PF_NetworkManager is in the scene.");
                 return;
             }
 
@@ -67,12 +67,12 @@ namespace PPF.Networking.UI
 
             if (nm.IsListening)
             {
-                Debug.Log("Already running.");
+                UnityEngine.Debug.Log("Already running.");
                 return;
             }
 
             bool ok = nm.StartClient();
-            Debug.Log(ok ? "Client started (joining local)." : "Failed to start client.");
+            UnityEngine.Debug.Log(ok ? "Client started (joining local)." : "Failed to start client.");
         }
 
         public void Leave()
@@ -85,7 +85,7 @@ namespace PPF.Networking.UI
                 return;
 
             nm.Shutdown();
-            Debug.Log("Network shutdown.");
+            UnityEngine.Debug.Log("Network shutdown.");
         }
 
         private void ApplyLocalTransportSettingsIfPossible()
