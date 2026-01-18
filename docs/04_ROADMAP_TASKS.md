@@ -8,9 +8,9 @@ Update this section manually as you complete tasks.
 
 
 
-\- Current Milestone: M0 Foundation
+\- Current Milestone: M1 — Prototype Core
 
-\- Current Task ID: CORE-001
+\- Current Task ID: ROOM-010
 
 \- Current Branch: main
 
