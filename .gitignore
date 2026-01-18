@@ -38,6 +38,12 @@ sysinfo.txt
 *.aab
 *.unitypackage
 
+# Unity player builds accidentally committed inside the project folder
+unity/**/TestBuild*/
+unity/**/TestBuild*/**
+unity/**/Past Present Future*_Data/
+unity/**/Past Present Future*_BurstDebugInformation_DoNotShip/
+
 # OS junk
 .DS_Store
 Thumbs.db
