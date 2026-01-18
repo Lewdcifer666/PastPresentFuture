@@ -30,7 +30,9 @@ namespace PPF.Core.Timeline
         {
             if (Instance != null && Instance != this)
             {
-                Destroy(gameObject);
+                // Only destroy the duplicate component, NOT the entire GameObject!
+                // This is critical because TimelineService may live on the NetworkManager prefab.
+                Destroy(this);
                 return;
             }
 

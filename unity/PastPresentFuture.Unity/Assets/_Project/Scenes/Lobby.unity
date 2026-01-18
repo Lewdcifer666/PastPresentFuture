@@ -319,8 +319,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8471827028641661813, guid: 8b798bc1f1ffd1d488faaf833fe13245, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 353589368}
   m_SourcePrefab: {fileID: 100100000, guid: 8b798bc1f1ffd1d488faaf833fe13245, type: 3}
+--- !u!1 &353589367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8471827028641661813, guid: 8b798bc1f1ffd1d488faaf833fe13245, type: 3}
+  m_PrefabInstance: {fileID: 353589366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &353589368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353589367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c6f44ef17c2084d95ebab661415660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PPF.Core.Timeline.TimelineTrackable
+  _debugId: 
 --- !u!1 &362044103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,6 +1647,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PPF.UI.Debug.TimelineDebugHud
   _timeline: {fileID: 0}
   _text: {fileID: 1711255750}
+  _visible: 1
+  _updateInterval: 0.1
 --- !u!4 &1283369274
 Transform:
   m_ObjectHideFlags: 0
@@ -2187,9 +2210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 186eff89aa389ea4bba42cd22d1c8865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PPF.Debug.DevSceneLoader
-  ShowTopMostFoldoutHeaderGroup: 1
   _gameplaySceneName: Room_001
-  _loadKey: 286
 --- !u!1 &1912691221
 GameObject:
   m_ObjectHideFlags: 0

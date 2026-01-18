@@ -477,7 +477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PPF.Rooms.DebugRoomObjective
   ShowTopMostFoldoutHeaderGroup: 1
-  _objectiveId: OBJ
+  _objectiveId: OBJ_B
   _displayName: Objective
   _requireHostOnly: 1
 --- !u!1 &1162779516
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PPF.Rooms.DebugRoomObjective
   ShowTopMostFoldoutHeaderGroup: 1
-  _objectiveId: OBJ
+  _objectiveId: OBJ_A
   _displayName: Objective
   _requireHostOnly: 1
 --- !u!1 &1220884793
@@ -629,7 +629,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PPF.Rooms.RoomManager
   ShowTopMostFoldoutHeaderGroup: 1
   _roomId: ROOM_001
-  _objectives: []
+  _objectives:
+  - {fileID: 1162779519}
+  - {fileID: 1052166488}
   _door: {fileID: 307834441}
   _requireAllObjectives: 1
   _autoSolveIfNoObjectives: 0
@@ -645,6 +647,7 @@ GameObject:
   - component: {fileID: 1521604801}
   - component: {fileID: 1521604800}
   - component: {fileID: 1521604799}
+  - component: {fileID: 1521604802}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -726,6 +729,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1521604802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521604798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b0cf2c5b74ca6e469ada70efce00b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PPF.Core.Timeline.RoleCameraCulling
+  _realLayerName: WorldReal
+  _proxyLayerName: WorldProxy
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
